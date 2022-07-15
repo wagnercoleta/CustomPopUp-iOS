@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E96CA6E37F2C339D169E613 /* Pods_CustomPopUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0272D5BDB0979329B5AD3173 /* Pods_CustomPopUp.framework */; };
 		DD051C86288204710093C653 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD051C85288204710093C653 /* AppDelegate.swift */; };
 		DD051C88288204710093C653 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD051C87288204710093C653 /* SceneDelegate.swift */; };
 		DD051C8A288204710093C653 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD051C89288204710093C653 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0272D5BDB0979329B5AD3173 /* Pods_CustomPopUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomPopUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D3AE316524973E3A1AE378 /* Pods-CustomPopUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPopUp.debug.xcconfig"; path = "Target Support Files/Pods-CustomPopUp/Pods-CustomPopUp.debug.xcconfig"; sourceTree = "<group>"; };
+		A8EFD0AB8F5E6063FC1DF5CB /* Pods-CustomPopUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPopUp.release.xcconfig"; path = "Target Support Files/Pods-CustomPopUp/Pods-CustomPopUp.release.xcconfig"; sourceTree = "<group>"; };
 		DD051C82288204710093C653 /* CustomPopUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPopUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD051C85288204710093C653 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD051C87288204710093C653 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E96CA6E37F2C339D169E613 /* Pods_CustomPopUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4BD68FDF835B79FC961A023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0272D5BDB0979329B5AD3173 /* Pods_CustomPopUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD051C79288204700093C653 = {
 			isa = PBXGroup;
 			children = (
 				DD051C84288204710093C653 /* CustomPopUp */,
 				DD051C83288204710093C653 /* Products */,
+				FF541A5967D4A2F0773F58F7 /* Pods */,
+				B4BD68FDF835B79FC961A023 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = CustomPopUp;
 			sourceTree = "<group>";
 		};
+		FF541A5967D4A2F0773F58F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22D3AE316524973E3A1AE378 /* Pods-CustomPopUp.debug.xcconfig */,
+				A8EFD0AB8F5E6063FC1DF5CB /* Pods-CustomPopUp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD051C96288204720093C653 /* Build configuration list for PBXNativeTarget "CustomPopUp" */;
 			buildPhases = (
+				6AF69A9B635BC6BD303EEB8F /* [CP] Check Pods Manifest.lock */,
 				DD051C7E288204710093C653 /* Sources */,
 				DD051C7F288204710093C653 /* Frameworks */,
 				DD051C80288204710093C653 /* Resources */,
+				321793DD95F84DB7661177BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		321793DD95F84DB7661177BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomPopUp/Pods-CustomPopUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomPopUp/Pods-CustomPopUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomPopUp/Pods-CustomPopUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF69A9B635BC6BD303EEB8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomPopUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD051C7E288204710093C653 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		DD051C97288204720093C653 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D3AE316524973E3A1AE378 /* Pods-CustomPopUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		DD051C98288204720093C653 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8EFD0AB8F5E6063FC1DF5CB /* Pods-CustomPopUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
