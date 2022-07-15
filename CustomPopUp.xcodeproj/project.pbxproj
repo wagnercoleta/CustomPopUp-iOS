@@ -14,6 +14,7 @@
 		DD051C8D288204710093C653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD051C8B288204710093C653 /* Main.storyboard */; };
 		DD051C8F288204720093C653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD051C8E288204720093C653 /* Assets.xcassets */; };
 		DD051C92288204720093C653 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD051C90288204720093C653 /* LaunchScreen.storyboard */; };
+		DD051C9A288209ED0093C653 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD051C99288209ED0093C653 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DD051C8E288204720093C653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD051C91288204720093C653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD051C93288204720093C653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD051C99288209ED0093C653 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		DD051C79288204700093C653 = {
 			isa = PBXGroup;
 			children = (
+				DD051C99288209ED0093C653 /* README.md */,
 				DD051C84288204710093C653 /* CustomPopUp */,
 				DD051C83288204710093C653 /* Products */,
 				FF541A5967D4A2F0773F58F7 /* Pods */,
@@ -88,7 +91,6 @@
 				22D3AE316524973E3A1AE378 /* Pods-CustomPopUp.debug.xcconfig */,
 				A8EFD0AB8F5E6063FC1DF5CB /* Pods-CustomPopUp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +156,7 @@
 			files = (
 				DD051C92288204720093C653 /* LaunchScreen.storyboard in Resources */,
 				DD051C8F288204720093C653 /* Assets.xcassets in Resources */,
+				DD051C9A288209ED0093C653 /* README.md in Resources */,
 				DD051C8D288204710093C653 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
